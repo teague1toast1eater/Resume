@@ -1,0 +1,162 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins
+\geometry{left=1.5cm, top=1.0cm, right=1.5cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Options: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%          awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Teague}{Beauchamp}
+\position{Cybersecurity, Software Development {\enskip\cdotp\enskip} Computer Scientist}
+\address{Logan, Utah, USA}
+
+\mobile{+1 (435) 890-4084}
+\email{beaurobby17@gmail.com}
+\github{teague1toast1eater}
+\linkedin{Teague-Beauchamp}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+  % Print the header with personal information
+  \makecvheader[C]
+
+  % Print the footer with page numbers
+  \makecvfooter
+    {\today}
+    {Teague Beauchamp~~~·~~~Résumé}
+    {\thepage}
+
+  %-------------------------------------------------------------------------------
+  % CV/RESUME CONTENT
+  %-------------------------------------------------------------------------------
+
+  %-------------------------------------------------------------------------------
+  \cvsection{Education}
+  %-------------------------------------------------------------------------------
+
+  \begin{cventries}
+
+    \cventry
+      {B.S. in Computer Science}
+      {Utah State University}
+      {Logan, Utah}
+      {Aug. 2021 - May. 2027}
+      {
+        \begin{cvitems}
+          \item {Member of Free Software and Linux Club, participating in coding competitions and hackathons.}
+          \item {Member of the Cybersecurity club, practicing ethical hacking and penetration testing skills.}
+        \end{cvitems}
+      }
+
+  \end{cventries}
+
+  %-------------------------------------------------------------------------------
+  \cvsection{Skills}
+  %-------------------------------------------------------------------------------
+
+  \begin{cvskills}
+
+    \cvskill
+      {Code}
+      {Python (Django, Flask, Tkinter, NumPy, Pandas, Matplotlib, PyTorch, PyTensor, Openpyxl, Poetry); C\# (Godot game development); Java (Gradle, Maven, JUnit); JavaScript (React), React Native, Vue, Next, Node, Express, Jest, Vite);  C++ (GCC/Clang); Rust; Bash/Zsh; PowerShell; HTML; CSS; x86 Asm; ARM Asm; R (statistical analysis).}
+
+    \cvskill
+      {Tools}
+      {Git; GitHub (Secrets, Actions/Act, Copilot); GitLab; Vim; Neovim; JetBrains; Visual Studio; VS Code; Vitest; LaTeX (Overleaf, Pandoc); Markdown (Obsidian); UML (Lucidchart); Figma; Microsoft Office.}
+
+    \cvskill
+      {Data}
+      {MySQL; PostgreSQL; SQLite; Azure SQL; Redis; JSON; YAML; TOML; XML; CSV.}
+
+    \cvskill
+      {Hosting}
+      {Azure (App Service, Functions, AKS, DevOps, Storage); Docker (Hub, Compose, Networking, Volumes); Gunicorn; Nginx; Apache (HTTP, Kafka); SSH (OpenSSH); VMware; VirtualBox; Linux (Debian, Arch, systemd services \& timers, Ubuntu); MacOS (Homebrew); Windows (Windows Services, Task Scheduler, PowerShell).}
+
+    \cvskill
+      {Services}
+      {Azure Active Directory; GitHub (API); GitLab (API); OAuth 2.0; Okta; OpenAPI; REST (JSON, HTTP verbs); Stripe.}
+    
+    \cvskill
+      {Soft Skills}
+      {Effective communication; Problem-solving; Time management; Team collaboration; Adaptability; Attention to detail; Critical thinking; Leadership.}
+
+  \end{cvskills}
+
+  %-------------------------------------------------------------------------------
+  \cvsection{Experience}
+  %-------------------------------------------------------------------------------
+
+  \begin{cventries}
+
+    \cventry
+      {Field Technician}
+      {Jex Environmental Solutions}
+      {Logan, Utah}
+      {Sep. 2020 - Present}
+      {
+        \begin{cvitems}
+          \item {Automating data analysis and log sorting on 10+ years of historical data using Python and R.}
+          \item {Identify trends, and issues, to improve treatment processes.}
+          \item {Troubleshooting, maintaining, and updating embedded systems to ensure reliable operation in remote locations used in alternative wastewater treatment solutions.}
+          \item {Working under pressure to perform routine maintenance and emergency repairs on treatment systems, ensuring minimal downtime and compliance with environmental regulations.}
+          \item {Communicating effectively with clients to explain technical issues and solutions in terms that can be understood by those unfamiliar with the equipment.}
+          \item {Providing training on system operation and maintenance as needed.}
+          \item {Documenting maintenance activities, repairs, and system performance to maintain accurate records for regulatory compliance and future reference.}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Cabinet Builder}
+      {Jensen's Custom Cabinets}
+      {Providence, Utah}
+      {Jan. 2020 - Sep. 2020}
+      {
+        \begin{cvitems}
+          \item {Collaborated with team members to design and build custom cabinetry, ensuring high-quality craftsmanship and attention to detail.}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Owner}
+      {Mr.ChillMonkey}
+      {Detroit, Michigan}
+      {Apr. 2016 - Jan. 2020}
+      {
+        \begin{cvitems}
+          \item {Founded and managed an online business specializing in custom longboard skateboards, overseeing all aspects from design to sales.}
+          \item {Designed unique skateboard graphics and layouts using graphic design software, catering to customer preferences and trends.}
+          \item {Worked with CNC machinery, and laser cutter/printer programs to produce high-quality longboard decks.}
+          \item {Handled customer service, order fulfillment, and marketing efforts to grow the business and maintain a loyal customer base.}
+        \end{cvitems}
+      }
+
+  \end{cventries}
+
+  %-------------------------------------------------------------------------------
+
+  \vspace*{\fill}
+  \begin{center}
+      \textbf{For more details, visit my LinkedIn.} \\
+      \textbf{References available upon request.}
+  \end{center}
+
+  %-------------------------------------------------------------------------------
+\end{document}
